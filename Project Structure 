@@ -1,0 +1,38 @@
+deployfix-ai/
+│
+├── agent/
+│   ├── __init__.py
+│   ├── analyzer.py
+│   ├── classifier.py
+│   ├── fixer.py
+│   ├── patch_generator.py
+│   ├── prompts.py
+│   └── utils.py
+│
+├── api/
+│   ├── __init__.py
+│   └── routes.py
+│
+├── examples/
+│   ├── docker_build_failure.log
+│   ├── github_actions_failure.log
+│   ├── node_build_failure.log
+│   └── python_dependency_error.log
+│
+├── output/
+│   └── sample_fix.json
+│
+├── tests/
+│   ├── test_analyzer.py
+│   └── test_classifier.py
+│
+├── docs/
+│   └── architecture.md
+│
+├── main.py
+├── requirements.txt
+├── Dockerfile
+├── .env.example
+├── .gitignore
+├── README.md
+└── LICENSE
