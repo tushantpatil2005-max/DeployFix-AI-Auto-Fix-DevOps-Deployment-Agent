@@ -1,0 +1,5 @@
+Step 4/8 : RUN npm install
+ ---> Running in 39d4b6e9
+npm ERR! ERESOLVE unable to resolve dependency tree
+npm ERR! peer react@18.0.0
+ERROR: failed to build Docker image
