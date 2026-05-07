@@ -75,7 +75,7 @@ pip install -r requirements.txt
 
 
 #Performance Metrics
-
+___
 Metric	Score
 Accuracy	85%
 Fix Success Rate	80%
@@ -84,7 +84,7 @@ Output Clarity	90%
 Final Score: 8200 / 10000
 
 #Benchmark Comparison
-
+___
 Scenario	Generic AI	DeployFix AI
 Docker Failure	Generic advice	Exact patch
 Missing ENV	Guess	Precise variable
@@ -101,7 +101,7 @@ Self-healing deployments
 Multi-agent orchestration
 
 #Tech Stack
-
+___
 Python
 
 FastAPI
