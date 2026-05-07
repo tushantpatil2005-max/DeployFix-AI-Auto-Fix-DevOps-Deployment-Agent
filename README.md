@@ -74,7 +74,8 @@ Structured Output
 pip install -r requirements.txt
 
 
-Performance Metrics
+#Performance Metrics
+
 Metric	Score
 Accuracy	85%
 Fix Success Rate	80%
@@ -82,7 +83,8 @@ Time Saved	70%
 Output Clarity	90%
 Final Score: 8200 / 10000
 
-Benchmark Comparison
+#Benchmark Comparison
+
 Scenario	Generic AI	DeployFix AI
 Docker Failure	Generic advice	Exact patch
 Missing ENV	Guess	Precise variable
@@ -98,7 +100,8 @@ Self-healing deployments
 
 Multi-agent orchestration
 
-Tech Stack
+#Tech Stack
+
 Python
 
 FastAPI
