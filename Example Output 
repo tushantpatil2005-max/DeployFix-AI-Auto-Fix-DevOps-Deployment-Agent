@@ -1,0 +1,10 @@
+{
+  "issue": "Missing environment variable OPENAI_API_KEY",
+  "category": "Missing Environment Variable",
+  "confidence": 0.94,
+  "recommended_fix": "Add secret in GitHub Actions",
+  "patch": [
+    "+ env:",
+    "+   OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}"
+  ]
+}
