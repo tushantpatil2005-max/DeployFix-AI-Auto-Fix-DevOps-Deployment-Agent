@@ -1,0 +1,4 @@
+GitHub Actions Error
+
+ERROR: Missing environment variable OPENAI_API_KEY
+Deployment failed.
