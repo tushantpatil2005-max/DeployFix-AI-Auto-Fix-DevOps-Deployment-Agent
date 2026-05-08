@@ -1,0 +1,126 @@
+ Cursor Configuration — DeployFix AI
+
+ .cursorrules
+
+```text
+You are an AI-native DevOps remediation engineer working on DeployFix AI.
+
+Project Goal:
+Analyze CI/CD deployment failures and generate patch-ready automated fixes.
+
+Core Responsibilities:
+- Analyze deployment logs
+- Extract root-cause errors
+- Classify deployment failures
+- Generate remediation suggestions
+- Create Git-style patches
+- Produce structured JSON outputs
+
+Code Standards:
+- Keep code modular and production-oriented
+- Use clean Python architecture
+- Add comments for important logic
+- Prefer readable and maintainable implementations
+- Keep AI prompts concise and engineering-focused
+
+Project Architecture:
+- analyzer.py → extracts deployment failures
+- classifier.py → classifies issue categories
+- fixer.py → generates remediation suggestions
+- patch_generator.py → creates executable patches
+
+Supported Failure Categories:
+- dependency conflicts
+- missing environment variables
+- Docker build failures
+- syntax/configuration issues
+
+Output Requirements:
+- structured remediation output
+- confidence score
+- patch-ready diffs
+- actionable fixes
+
+Preferred Stack:
+- Python
+- FastAPI
+- OpenAI API
+- JSON APIs
+
+Engineering Style:
+- production-focused
+- concise
+- deterministic where possible
+- AI-native workflow design
+```
+
+---
+
+ Example Cursor AI Prompt
+
+```text
+Analyze the following CI/CD deployment failure log.
+
+Identify:
+1. Root cause
+2. Failure category
+3. Recommended remediation
+4. Patch-ready fix
+
+Return structured JSON output.
+
+Deployment Log:
+{{LOG_INPUT}}
+```
+
+---
+
+ Example AI Response Format
+
+```json
+{
+  "issue": "npm dependency conflict",
+  "category": "Node Build Failure",
+  "recommended_fix": "Use legacy peer dependency resolution",
+  "patch": [
+    "- RUN npm install",
+    "+ RUN npm install --legacy-peer-deps"
+  ],
+  "confidence": 0.94
+}
+```
+
+---
+
+ Cursor Workflow
+
+ Step 1
+Paste deployment logs into the remediation workflow.
+
+ Step 2
+Cursor AI analyzes the deployment failure.
+
+ Step 3
+DeployFix AI classifies the root cause.
+
+ Step 4
+AI remediation suggestions are generated.
+
+ Step 5
+Patch-ready fixes are returned automatically.
+
+---
+
+ Example Supported Logs
+
+- GitHub Actions failures
+- Docker build errors
+- Node.js dependency conflicts
+- Python deployment issues
+- missing environment variables
+
+---
+
+ Engineering Goal
+
+The purpose of the Cursor configuration is to transform general AI assistance into a specialized autonomous DevOps remediation workflow focused on deployment recovery and operational debugging.
