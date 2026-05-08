@@ -1,0 +1,15 @@
+Scenario	Generic AI	DeployFix AI
+Docker Failure	Generic advice	Exact patch
+Missing ENV	Guess	Precise variable
+CI/CD Error	Long explanation	Actionable remediation
+Future Improvements
+
+GitHub PR automation
+
+Kubernetes support
+
+Slack integration
+
+Self-healing deployments
+
+Multi-agent orchestration
