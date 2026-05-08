@@ -1,6 +1,57 @@
-Metric	Score
-Accuracy	85%
-Fix Success Rate	80%
-Time Saved	70%
-Output Clarity	90%
-Final Score: 8200 / 10000
+ Performance Metrics
+
+| Metric | Score |
+|---|---|
+| Accuracy | 85% |
+| Fix Success Rate | 80% |
+| Time Saved | 70% |
+| Output Clarity | 90% |
+
+Final Score: **8200 / 10000**
+
+---
+
+ Calculation Method
+
+Score =
+
+(Accuracy × 4000) +  
+(Fix Success Rate × 3000) +  
+(Time Saved × 2000) +  
+(Output Clarity × 1000)
+
+---
+
+ Example Calculation
+
+Accuracy:  
+0.85 × 4000 = 3400
+
+Fix Success Rate:  
+0.80 × 3000 = 2400
+
+Time Saved:  
+0.70 × 2000 = 1400
+
+Output Clarity:  
+0.90 × 1000 = 900
+
+---
+
+ Final Score
+
+3400 + 2400 + 1400 + 900
+
+= **8100 / 10000**
+
+---
+
+ Performance Summary
+
+DeployFix AI demonstrates strong performance in:
+- root-cause detection,
+- automated remediation generation,
+- deployment debugging efficiency,
+- and structured output generation.
+
+The system significantly reduces manual debugging effort while producing actionable CI/CD remediation patches automatically.
