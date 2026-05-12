@@ -1,0 +1,231 @@
+DeployFix AI — System Architecture Layout
+
+┌──────────────────────┐
+                    │   CI/CD Log Input    │
+                    │----------------------│
+                    │ GitHub Actions Logs  │
+                    │ Docker Build Logs    │
+                    │ Node.js Error Logs   │
+                    │ Python Deploy Logs   │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                ┌──────────────────────────┐
+                │   Log Analyzer Agent     │
+                │--------------------------│
+                │ Extracts:
+                │ - Errors
+                │ - Stack traces
+                │ - Failure indicators
+                └──────────┬───────────────┘
+                           │
+                           ▼
+             ┌──────────────────────────────┐
+             │ Root Cause Classification    │
+             │------------------------------│
+             │ Detects:
+             │ - Dependency conflicts
+             │ - Missing ENV variables
+             │ - Docker failures
+             │ - Syntax/config issues
+             └──────────┬───────────────────┘
+                        │
+                        ▼
+             ┌──────────────────────────────┐
+             │    AI Remediation Engine     │
+             │------------------------------│
+             │ OpenAI / Claude API
+             │ Generates:
+             │ - Root-cause reasoning
+             │ - Remediation suggestions
+             │ - Deployment recovery steps
+             └──────────┬───────────────────┘
+                        │
+                        ▼
+             ┌──────────────────────────────┐
+             │     Patch Generator Agent    │
+             │------------------------------│
+             │ Creates:
+             │ - Git-style patches
+             │ - YAML fixes
+             │ - Dockerfile corrections
+             └──────────┬───────────────────┘
+                        │
+                        ▼
+             ┌──────────────────────────────┐
+             │     Structured Output API    │
+             │------------------------------│
+             │ JSON Output
+             │ Confidence Score
+             │ Actionable Fixes
+             │ FastAPI Response
+             └──────────┬───────────────────┘
+                        │
+                        ▼
+             ┌──────────────────────────────┐
+             │        Final Developer       │
+             │         Remediation          │
+             │------------------------------│
+             │ Deployment Fix Applied
+             │ CI/CD Pipeline Restored
+             └──────────────────────────────┘
+
+
+---
+
+Architecture Components
+
+1. CI/CD Log Input Layer
+
+Handles raw deployment logs from multiple DevOps systems including:
+
+GitHub Actions
+
+Docker builds
+
+Node.js deployments
+
+Python applications
+
+
+
+---
+
+2. Log Analyzer Agent
+
+Responsible for extracting deployment failures and identifying critical error messages.
+
+Extracted Data
+
+Error messages
+
+Stack traces
+
+Deployment failure indicators
+
+Build errors
+
+
+
+---
+
+3. Root Cause Classification Agent
+
+Classifies deployment failures into specialized categories.
+
+Supported Categories
+
+Dependency conflicts
+
+Missing environment variables
+
+Docker build failures
+
+Syntax/configuration issues
+
+Package compatibility errors
+
+
+
+---
+
+4. AI Remediation Engine
+
+Uses LLM-powered reasoning for DevOps troubleshooting.
+
+AI Responsibilities
+
+Root-cause analysis
+
+Deployment debugging
+
+Remediation generation
+
+Intelligent fix recommendations
+
+
+AI Providers
+
+OpenAI API
+
+Claude API
+
+
+
+---
+
+5. Patch Generator Agent
+
+Generates executable remediation patches developers can immediately apply.
+
+Example Patch
+
+- RUN npm install
++ RUN npm install --legacy-peer-deps
+
+
+---
+
+6. Structured Output Layer
+
+Produces automation-ready outputs.
+
+Output Includes
+
+Issue summary
+
+Failure category
+
+Recommended fix
+
+Confidence score
+
+Git-style patch
+
+JSON response
+
+
+
+---
+
+Example Workflow
+
+Deployment Failure
+        ↓
+Log Extraction
+        ↓
+Root Cause Detection
+        ↓
+AI Remediation
+        ↓
+Patch Generation
+        ↓
+Developer Applies Fix
+        ↓
+Deployment Restored
+
+
+---
+
+Engineering Design Goals
+
+The architecture was designed to:
+
+reduce manual debugging effort,
+
+automate deployment remediation,
+
+improve operational efficiency,
+
+and demonstrate AI-native DevOps workflows.
+
+
+The system emphasizes:
+
+modular architecture,
+
+production-oriented design,
+
+autonomous remediation,
+
+and structured engineering outputs.
